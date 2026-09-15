@@ -1,6 +1,5 @@
-def test_basic_math():
-    assert 2 + 2 == 4
+import time
 
-def test_this_should_fail():
-    result = 10 / 2
-    assert result == 4, f"Expected 4, got {result}"
+def test_this_will_hang():
+    time.sleep(120)
+    assert True
