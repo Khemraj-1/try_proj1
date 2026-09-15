@@ -1,5 +1,4 @@
-import time
+import urllib.request
 
-def test_this_will_hang():
-    time.sleep(120)
-    assert True
+def test_network_should_be_blocked():
+    urllib.request.urlopen("http://example.com", timeout=5)
